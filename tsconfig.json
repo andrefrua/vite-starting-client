@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "strict": true,
+
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "paths": {
+      "@hv/app-shell": ["packages/app-shell/src"]
+    },
+    "resolveJsonModule": true,
+    "types": ["jest"],
+
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": true,
+    "outDir": "dist",
+    "sourceMap": true,
+
+    "allowJs": false,
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "preserveSymlinks": true,
+
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "lib": ["DOM", "ESNext"],
+    "target": "ESNext",
+
+    "skipLibCheck": true
+  },
+  "include": [".eslintrc.cjs", "jest.config.cjs", "packages/*/src", "doc"],
+  "exclude": ["node_modules"]
+}
